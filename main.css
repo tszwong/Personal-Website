@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "medio";
+    src: url("fonts/medio.otf");
+    font-family: "vogue";
+    src: url("fonts/Vogue.ttf");
+    font-family: "cocogoose heavy";
+    src: url("")
+}
+
+* {
+    font-family: vogue;
+}
+
+.about-me {
+    margin-top: 100px;
+    color: #111;
+    text-align: center;
+}
+
+
+.about-me p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 55ch;
+    line-height: 120%;
+}
+
+#description {
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+
+.topnav {
+    top: 0px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    background-color: white;
+}
+
+.topnav a {
+    color: #111;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.BULogo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 25%;
+    width: 25%;
+}
