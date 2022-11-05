@@ -11,27 +11,6 @@
     font-family: vogue;
 }
 
-.about-me {
-    margin-top: 100px;
-    color: #111;
-    text-align: center;
-}
-
-
-.about-me p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 55ch;
-    line-height: 120%;
-}
-
-#description {
-    padding-top: 10px;
-    text-align: center;
-}
-
-
-
 .topnav {
     top: 0px;
     text-align: center;
@@ -45,20 +24,17 @@
     color: #111;
     margin-left: 10px;
     margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
     text-decoration: none;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: white;
-}
-
-.footer p {
-    text-align: center;
+.topnav a:hover {
+    background-color: rgb(162, 12, 12);
+    color: white;
+    transition: 0.65s;
 }
 
 .BULogo {
@@ -66,4 +42,86 @@
     margin-bottom: 20px;
     height: 25%;
     width: 25%;
+}
+
+.about-me {
+    margin-top: 100px;
+    color: #111;
+    text-align: center;
+}
+
+.about-me p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50ch;
+    line-height: 175%;
+}
+
+#description {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 10px
+}
+
+.c-details span {
+    font-weight: 300;
+    font-size: 13px
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px
+}
+
+.badge span {
+    background-color: #fffbec;
+    width: 60px;
+    height: 25px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    display: flex;
+    color: #fed85d;
+    justify-content: center;
+    align-items: center
+}
+
+.progress {
+    height: 10px;
+    border-radius: 10px
+}
+
+.progress div {
+    background-color: red
+}
+
+.text1 {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.text2 {
+    color: #a5aec0
 }
