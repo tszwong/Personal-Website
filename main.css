@@ -32,7 +32,7 @@
 }
 
 .topnav a:hover {
-    background-color: rgb(162, 12, 12);
+    background-color: black;
     color: white;
     transition: 0.65s;
 }
@@ -99,8 +99,8 @@
 
 .badge span {
     background-color: #fffbec;
-    width: 60px;
-    height: 25px;
+    width: 65px;
+    height: 30px;
     padding-bottom: 3px;
     border-radius: 5px;
     display: flex;
@@ -125,4 +125,8 @@
 
 .text2 {
     color: #a5aec0;
+}
+
+#smaller-title {
+    font-size: 12px;
 }
