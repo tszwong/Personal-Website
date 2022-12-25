@@ -76,6 +76,7 @@
 }
 
 .card {
+    margin-top: 40%;
     border: none;
     border-radius: 10px;
     background-color: rgb(243, 228, 210);
@@ -127,6 +128,27 @@
     color: #a5aec0;
 }
 
-#smaller-title {
-    font-size: 12px;
+a {
+    color: #111;
+}
+
+.gh-icon:hover {
+    color: rgb(155, 98, 28);
+}
+
+.gh-icon {
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.js {
+    color: #e34c26 !important;
+}
+
+.css {
+    color: #caba40 !important;
+}
+
+.html {
+    color: #563d7c !important;
 }
