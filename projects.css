@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "medio";
+    src: url("fonts/medio.otf");
+    font-family: "vogue";
+    src: url("fonts/Vogue.ttf");
+    font-family: "cocogoose heavy";
+    src: url("")
+}
+
+* {
+    font-family: vogue;
+}
+
+.topnav {
+    top: 0px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    background-color: white;
+}
+
+.topnav a {
+    color: #111;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: black;
+    color: white;
+    transition: 0.65s;
+}
+
+.about-me {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #111;
+    text-align: center;
+}
+
+.about-me p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50ch;
+    line-height: 175%;
+}
+
+#description {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.card {
+    margin-top: 20%;
+    height: 310px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(243, 228, 210);
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.c-details span {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px;
+}
+
+.badge span {
+    background-color: #fffbec;
+    width: 65px;
+    height: 30px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    display: flex;
+    color: rgb(247, 171, 48);
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 10px;
+}
+
+.progress div {
+    background-color: rgb(206, 152, 35);
+}
+
+.text1 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.text2 {
+    color: #a5aec0;
+}
+
+a {
+    color: #111;
+}
+
+.gh-icon:hover {
+    color: rgb(155, 98, 28);
+}
+
+.gh-icon {
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.js {
+    color: #e34c26 !important;
+}
+
+.css {
+    color: #caba40 !important;
+}
+
+.html {
+    color: #563d7c !important;
+}
