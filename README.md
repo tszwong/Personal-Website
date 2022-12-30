@@ -1,2 +1,2 @@
 # Personal-Website
-tszwong.github.io
+https://tszwong.github.io/Personal-Website/
