@@ -22,6 +22,7 @@
 }
 
 .topnav a {
+    letter-spacing: 1px;
     color: #111;
     margin-left: 10px;
     margin-right: 10px;
@@ -42,14 +43,20 @@
     padding-top: 3px;
     padding-left: 12px;
     padding-right: 12px;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: 35px;
     background-color: black;
     color: white;
+    letter-spacing: 2px;
+}
+
+.offcanvas-header {
+    padding-bottom: 10px;
 }
 
 #close-button {
-    margin-top: 22px;
-    font-size: 25px;
+    margin-top: 45px;
+    font-size: 30px;
     background: none;
     border: none;
 }
@@ -180,4 +187,64 @@ a {
 
 #third-card{
     margin-bottom: 70px;
+}
+
+nav li a i{
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    font-size: 30px;
+}
+  
+ul li a span{
+    margin-left: 80px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+  
+.social-media a:hover {
+    z-index: 1;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+  
+ul li:hover a span{
+    padding-left: 15%;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+}
+
+li:hover {
+    z-index: 1;
+    padding-left: 10%;
+    background-color: black;
+    width: 100%;
+}
+  
+nav li{
+    height: 60px;
+    margin-top: 20px;
+    position:relative;
+    list-style: none;
+    transition: all .3s linear;
+ }
+  
+nav li a{
+    color: black;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 5%;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.4); */
+    transition: all .5s linear;
+    text-decoration: none;
+}
+  
+nav ul {
+    padding-inline-start: 0;
+    margin-left: 30px;
 }
