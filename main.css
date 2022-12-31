@@ -12,6 +12,7 @@
 }
 
 .topnav {
+    z-index: 3;
     font-size: 18px;
     top: 0px;
     text-align: center;
@@ -43,11 +44,12 @@
 }
 
 #offcanvasScrollingLabel {
-    padding-top: 3px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
     margin-top: 40px;
-    margin-left: 35px;
+    margin-left: 20px;
     background-color: black;
     color: white;
     letter-spacing: 2px;
@@ -66,8 +68,8 @@
 
 #close-button:hover {
     background-color: black;
-    color: white;
-    transition: 0.65s;
+    color: rgb(197, 33, 33);
+    transition: 0.35s;
     border: 1px;
     border-radius: 1px;
 }
@@ -173,4 +175,103 @@ nav li a{
 nav ul {
     padding-inline-start: 0;
     margin-left: 30px;
+}
+
+#pdf-display {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+#active {
+    border-radius: 0;
+    background-color: black;
+    color: white;
+}
+
+.card {
+    margin-top: 10%;
+    height: 310px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(243, 228, 210);
+}
+
+.card h3 {
+    font-size: 20px;
+}
+
+.c-details span {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px;
+}
+
+.badge span {
+    background-color: #fffbec;
+    width: 65px;
+    height: 30px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    display: flex;
+    color: rgb(247, 171, 48);
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 10px;
+}
+
+.progress div {
+    background-color: rgb(206, 152, 35);
+}
+
+.text1 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.text2 {
+    color: #a5aec0;
+}
+
+a {
+    color: #111;
+}
+
+.gh-icon:hover {
+    color: rgb(155, 98, 28);
+    transition: 0.5s;
+}
+
+.gh-icon {
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.js {
+    color: #e34c26 !important;
+}
+
+.css {
+    color: #caba40 !important;
+}
+
+.html {
+    color: #563d7c !important;
+}
+
+#third-card{
+    margin-bottom: 70px;
 }
