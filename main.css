@@ -16,7 +16,7 @@
     font-size: 18px;
     top: 0px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 20px;
     position: sticky;
     background-color: white;
@@ -27,10 +27,10 @@
     color: #111;
     margin-left: 10px;
     margin-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 3px;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
     text-decoration: none;
     background-color: white;
     border: none;
@@ -64,6 +64,7 @@
     font-size: 30px;
     background: none;
     border: none;
+    padding: 5px;
 }
 
 #close-button:hover {
@@ -74,7 +75,7 @@
     border-radius: 1px;
 }
 
-.BULogo {
+/* .BULogo {
     margin-top: 40px;
     margin-bottom: 20px;
     height: 20%;
@@ -83,7 +84,7 @@
     width: 20%;
     min-width: 200px; 
     max-width: 300px;
-}
+} */
 
 .about-me {
     margin-top: 50px;
@@ -97,6 +98,7 @@
     margin-right: auto;
     max-width: 50ch;
     line-height: 175%;
+    letter-spacing: 1px;
 }
 
 #description {
@@ -178,7 +180,7 @@ nav ul {
 }
 
 #pdf-display {
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -274,4 +276,283 @@ a {
 
 #third-card{
     margin-bottom: 70px;
+}
+
+@media (max-width: 480px) {
+    * {
+        font-family: vogue;
+    }
+    
+    .topnav {
+        z-index: 3;
+        font-size: 165%;
+        top: 0%;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+        position: fixed;
+        background-color: white;
+    }
+    
+    .topnav a {
+        letter-spacing: 5%;
+        color: #111;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 1.75%;
+        padding-bottom: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        text-decoration: none;
+        background-color: white;
+        border: none;
+    }
+    
+    .topnav a:hover {
+        border-radius: 0;
+        background-color: black;
+        color: white;
+        transition: 0.65s;
+    }
+    
+    #offcanvasScrollingLabel {
+        padding-top: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 3px;
+        margin-top: 40px;
+        margin-left: 20px;
+        background-color: black;
+        color: white;
+        letter-spacing: 2px;
+    }
+    
+    .offcanvas-header {
+        padding-bottom: 10px;
+    }
+    
+    #close-button {
+        margin-top: 45px;
+        font-size: 30px;
+        background: none;
+        border: none;
+        padding: 5px;
+    }
+    
+    #close-button:hover {
+        background-color: black;
+        color: rgb(197, 33, 33);
+        transition: 0.35s;
+        border: 1px;
+        border-radius: 1px;
+    }
+    
+    /* .BULogo {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        height: 20%;
+        min-height: 200px;
+        max-height: 300px;
+        width: 20%;
+        min-width: 200px; 
+        max-width: 300px;
+    } */
+    
+    .about-me {
+        margin-top: 30%;
+        margin-bottom: 10%;
+        color: #111;
+        text-align: center;
+    }
+    
+    .about-me p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50ch;
+        line-height: 175%;
+        letter-spacing: 1px;
+    }
+    
+    #name {
+        font-size: 175%;
+    }
+
+    #description {
+        padding-top: 5%;
+        text-align: center;
+        font-size: 110%;
+    }
+    
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        background-color: white;
+    }
+    
+    .footer p {
+        text-align: center;
+    }
+      
+    nav li a i{
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        font-size: 30px;
+    }
+      
+    ul li a span{
+        margin-left: 80px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+      
+    .social-media a:hover {
+        z-index: 1;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+    }
+      
+    ul li:hover a span{
+        padding-left: 15%;
+        display: block;
+        text-decoration: none;
+        width: 100%;
+    }
+    
+    li:hover {
+        z-index: 1;
+        padding-left: 10%;
+        background-color: black;
+        width: 100%;
+    }
+      
+    nav li{
+        height: 60px;
+        margin-top: 20px;
+        position:relative;
+        list-style: none;
+        transition: all .3s linear;
+     }
+      
+    nav li a{
+        color: black;
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 60px;
+        padding-left: 5%;
+        /* border-bottom: 1px solid rgba(255, 255, 255, 0.4); */
+        transition: all .5s linear;
+        text-decoration: none;
+    }
+      
+    nav ul {
+        padding-inline-start: 0;
+        margin-left: 30px;
+    }
+    
+    #pdf-display {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    
+    #active {
+        border-radius: 0;
+        background-color: black;
+        color: white;
+    }
+    
+    .card {
+        margin-top: 10%;
+        height: 310px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(243, 228, 210);
+    }
+    
+    .card h3 {
+        font-size: 20px;
+    }
+    
+    .c-details span {
+        font-weight: 300;
+        font-size: 13px;
+    }
+    
+    .icon {
+        width: 50px;
+        height: 50px;
+        background-color: #eee;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 39px;
+    }
+    
+    .badge span {
+        background-color: #fffbec;
+        width: 65px;
+        height: 30px;
+        padding-bottom: 3px;
+        border-radius: 5px;
+        display: flex;
+        color: rgb(247, 171, 48);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .progress {
+        height: 10px;
+        border-radius: 10px;
+    }
+    
+    .progress div {
+        background-color: rgb(206, 152, 35);
+    }
+    
+    .text1 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .text2 {
+        color: #a5aec0;
+    }
+    
+    a {
+        color: #111;
+    }
+    
+    .gh-icon:hover {
+        color: rgb(155, 98, 28);
+        transition: 0.5s;
+    }
+    
+    .gh-icon {
+        margin-top: 5px;
+        padding-top: 5px;
+    }
+    
+    .js {
+        color: #e34c26 !important;
+    }
+    
+    .css {
+        color: #caba40 !important;
+    }
+    
+    .html {
+        color: #563d7c !important;
+    }
+    
+    #third-card{
+        margin-bottom: 70px;
+    }
 }
