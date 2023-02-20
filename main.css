@@ -101,6 +101,10 @@
     letter-spacing: 1px;
 }
 
+#currently {
+    margin-top: 150px;
+}
+
 #description {
     padding-top: 10px;
     text-align: center;
