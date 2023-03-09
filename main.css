@@ -11,6 +11,14 @@
     font-family: vogue;
 }
 
+body {
+    background-color: #e8e8e8;
+}
+
+h1, h2, h3 {
+    color: #343333;
+}
+
 .topnav {
     z-index: 3;
     font-size: 18px;
@@ -19,12 +27,12 @@
     padding-top: 25px;
     padding-bottom: 20px;
     position: sticky;
-    background-color: white;
+    background-color: #e8e8e8;
 }
 
 .topnav a {
     letter-spacing: 1px;
-    color: #111;
+    color: #343333;
     margin-left: 10px;
     margin-right: 10px;
     padding-top: 8px;
@@ -34,6 +42,7 @@
     text-decoration: none;
     background-color: white;
     border: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07), 0 4px 20px 0 rgba(0, 0, 0, 0.07);
 }
 
 .topnav a:hover {
@@ -116,7 +125,7 @@
     width: 100%;
     padding-top: 20px;
     padding-bottom: 10px;
-    background-color: white;
+    background-color: #e8e8e8;
 }
 
 .footer p {
@@ -190,8 +199,8 @@ nav ul {
 
 #active {
     border-radius: 0;
-    background-color: black;
-    color: white;
+    background-color: #343333;
+    color: #e8e8e8;
 }
 
 .card {
@@ -306,7 +315,7 @@ a {
 body.dark-mode,
 .dark-mode .topnav, 
 .dark-mode .footer {
-    background: #343333;
+    background: #414040;
 }
 .dark-mode h1,
 .dark-mode h3,
@@ -318,7 +327,8 @@ body.dark-mode,
     color: rgb(212, 212, 212);
 }
 .dark-mode .topnav a:hover {
-    color: #d4af27;
+    color: #af8900;
+    background-color: rgb(212, 212, 212);
 }
 .dark-mode #active {
     background-color: rgb(212, 212, 212);
