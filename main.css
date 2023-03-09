@@ -11,29 +11,6 @@
     font-family: vogue;
 }
 
-/* dark mode theme styles */
-body.dark-mode,
-.dark-mode .topnav, 
-.dark-mode .footer {
-    background: #343333;
-}
-.dark-mode h1,
-.dark-mode h3,
-.dark-mode p {
-    color: #e8e8e8;
-}
-.dark-mode .topnav a {
-    background-color: #111;
-    color: rgb(212, 212, 212);
-}
-.dark-mode .topnav a:hover {
-    color: #b69e4a;
-}
-.dark-mode #active {
-    background-color: rgb(212, 212, 212);
-    color: #111;
-}
-
 .topnav {
     z-index: 3;
     font-size: 18px;
@@ -309,10 +286,59 @@ a {
 }
 
 .html {
-    color: #563d7c !important;
+    color: #68469b !important;
+}
+
+.py {
+    color: #3883eb !important;
 }
 
 #third-card{
     margin-bottom: 70px;
 }
 
+.project-links {
+    text-decoration: none;
+}
+
+
+/* dark mode color theme */
+body.dark-mode,
+.dark-mode .topnav, 
+.dark-mode .footer {
+    background: #343333;
+}
+.dark-mode h1,
+.dark-mode h3,
+.dark-mode p {
+    color: #e8e8e8;
+}
+.dark-mode .topnav a {
+    background-color: #111;
+    color: rgb(212, 212, 212);
+}
+.dark-mode .topnav a:hover {
+    color: #d4af27;
+}
+.dark-mode #active {
+    background-color: rgb(212, 212, 212);
+    color: #111;
+}
+.dark-mode .badge span {
+    background-color: #484745;
+    color: rgb(247, 171, 48);
+}
+.dark-mode .card {
+    background-color: rgb(36, 35, 34);
+    color: #e8e8e8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dark-mode .card h3 {
+    color: #e8e8e8;
+}
+.dark-mode .css {
+    color: #e1c742 !important;
+}
+.dark-mode .project-links {
+    color: #e8e8e8;
+}
