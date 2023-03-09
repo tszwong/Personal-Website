@@ -11,6 +11,29 @@
     font-family: vogue;
 }
 
+/* dark mode theme styles */
+body.dark-mode,
+.dark-mode .topnav, 
+.dark-mode .footer {
+    background: #343333;
+}
+.dark-mode h1,
+.dark-mode h3,
+.dark-mode p {
+    color: #e8e8e8;
+}
+.dark-mode .topnav a {
+    background-color: #111;
+    color: rgb(212, 212, 212);
+}
+.dark-mode .topnav a:hover {
+    color: #b69e4a;
+}
+.dark-mode #active {
+    background-color: rgb(212, 212, 212);
+    color: #111;
+}
+
 .topnav {
     z-index: 3;
     font-size: 18px;
