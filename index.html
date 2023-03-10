@@ -14,13 +14,16 @@
         <!-- bootstrap + other stylesheets + js script -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair-Display">
         <link rel="stylesheet" href="main.css">
+        <script src="script.js"></script>
         
         <!-- ionicons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="script.js"></script>
     </head>
     
     <body>
@@ -55,12 +58,12 @@
 
             <div class="about-me">
                 <h1 id="name">Tsz Kit Wong</h1>
-                <p id="description" style="font-family: 'Times New Roman', Times, serif; font-size: 20px; max-width: 42ch;">
+                <p id="description" style="max-width: 35ch;">
                     Sophomore student studying Computer Science at Boston University.
                 </p>
                 <!-- <img class="BULogo" src="assets/BULogo.png"> -->
                 <h3 id="currently">Currently Working On...</h3>
-                <button onclick="myFunction()">Toggle dark/light mode</button>
+                <button id="theme-mode" onclick="myFunction()">Toggle dark/light mode</button>
             </div>
 
             <!-- cards to display personal projects -->
@@ -145,8 +148,8 @@
             </div>
 
             <div id="resume-display" class="d-flex flex-column justify-content-center align-items-center">
-                <a id="resume-download" class="top-element" href="assets/Tsz-Kit-Wong_Resume.pdf" download="tsz_kit_wong_resume.pdf" target="_blank">View/Download Resume</a>
-                <img class="bottom-element" src="assets/Tsz-Kit-Wong_Resume.pdf" style="height: 80%; width: 80%; padding-bottom: 30px;">
+                <a id="resume-download" class="top-element" href="assets/Tsz Kit Wong Resume.pdf" download="assets/Tsz-Kit-Wong_Resume.pdf" target="_blank">View/Download Resume</a>
+                <img class="bottom-element" src="assets/Tsz-Kit-Wong_Resume.jpg" style="height: 80%; width: 80%; padding-bottom: 30px;">
             </div>
 
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="font-family: Monospace;">
