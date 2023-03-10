@@ -30,7 +30,8 @@ h1, h2, h3 {
     background-color: #e8e8e8;
 }
 
-.topnav a {
+.topnav a,
+#resume-download{
     flex-flow: column wrap;
     letter-spacing: 1px;
     color: #343333;
@@ -46,7 +47,8 @@ h1, h2, h3 {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07), 0 4px 20px 0 rgba(0, 0, 0, 0.07);
 }
 
-.topnav a:hover {
+.topnav a:hover,
+#resume-download:hover {
     border-radius: 0;
     background-color: #343333;
     color: #af8900;
@@ -193,11 +195,9 @@ nav ul {
     margin-left: 30px;
 }
 
-#pdf-display {
-    height: auto;
-    width: auto;
+#resume-display {
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 #active {
