@@ -28,12 +28,12 @@
 
             <div class="topnav">
                 <a id="active" href="#">ABOUT ME</a>
-                <a href="projects.html">PROJECTS</a>
+                <a href="#">PROJECTS</a>
                 <a data-bs-toggle="offcanvas" href="#offcanvasScrolling" role="button" aria-controls="offcanvasScrolling">LINKS</a>
                 <a href="resume.html">RESUME</a>
             </div>
 
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="font-family: Monospace;">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="font-family: Monospace; background-color: #909090;">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasScrollingLabel">My Links</h5>
                     <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" style="border: none; background: none; margin-right: 20px;"><ion-icon id="close-button" name="close-outline"></ion-icon></button>
@@ -60,16 +60,17 @@
                 </p>
                 <!-- <img class="BULogo" src="assets/BULogo.png"> -->
                 <h3 id="currently">Currently Working On...</h3>
-                <button onclick="myFunction()">Toggle dark mode</button>
-                <p id="description">
-                    Projects I have created so far...
-                </p>
+                <button onclick="myFunction()">Toggle dark/light mode</button>
             </div>
 
             <!-- cards to display personal projects -->
             <div class="cards-display">
                 <div class="container mt-5 mb-3">
                     <div class="row">
+
+                        <p id="description">
+                            Projects I have created so far...
+                        </p>
 
                         <div class="col-md-4">
                             <div class="card p-3 mb-2" >
@@ -87,7 +88,7 @@
                                         <div class="progress">
                                             <div class="py" class="progress-bar" role="progressbar" style="width: 100%; background-color: #3883eb" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
-                                        <div class="mt-3"> <span class="text1">Languages: <span class="text2" style="color: rgb(6, 6, 135);"><span class="py">Python</span></span></span> </div>
+                                        <div class="mt-3"> <span class="text1">Tools: <span class="text2" style="color: rgb(6, 6, 135);"><span class="py">Python</span></span></span> </div>
                                     </div>
                                 </div>
                             </div>
@@ -98,18 +99,18 @@
                                 <div class="d-flex justify-content-between">
                                     <div class="d-flex flex-row align-items-center">
                                         <div class="ms-2 c-details">
-                                            <h6 class="mb-1">Discord Bot</h6> <span>July, 2022</span>
+                                            <h6 class="mb-1">Stock Scraper Bot</h6> <span>July, 2022</span>
                                         </div>
                                     </div>
                                     <div class="badge"> <span>Personal</span> </div>
                                 </div>
                                 <div class="mt-4">
-                                    <h3 class="heading"><a href="#" class="project-links">Stock Scraper Discord Bot Implementation</a></h3>
+                                    <h3 class="heading"><a href="#" class="project-links">Discord Bot Implementation</a></h3>
                                     <div class="mt-5">
                                         <div class="progress">
                                             <div class="py" class="progress-bar" role="progressbar" style="width: 100%; background-color: #3883eb" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
-                                        <div class="mt-3"> <span class="text1">Languages: <span class="text2" style="color: rgb(6, 6, 135);"><span class="py">Python</span></span></span> </div>
+                                        <div class="mt-3"> <span class="text1">Tools: <span class="text2" style="color: rgb(6, 6, 135);"><span class="py">Python</span></span></span> </div>
                                     </div>
                                 </div>
                             </div>
@@ -133,13 +134,34 @@
                                             <div class="progress-bar" role="progressbar" style="width: 35.4%; background-color: #f1e05a !important;" aria-valuenow="73.0" aria-valuemin="0" aria-valuemax="100"></div>
                                             <div class="progress-bar" role="progressbar" style="width: 27.0%; background-color: #68469b !important;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
-                                        <div class="mt-3"> <span class="text1">Languages: <span class="text2"><span class="js">JS</span>, <span class="css">CSS</span>, <span class="html">HTML</span></span></span> </div>
+                                        <div class="mt-3"> <span class="text1">Tools: <span class="text2"><span class="js">JS</span>, <span class="css">CSS</span>, <span class="html">HTML</span></span></span> </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
+                </div>
+            </div>
+
+            <div id="pdf-display" class="d-flex align-items-center justify-content-center">
+                <embed src="assets/CS Resume.pdf" width="830px" height="1125px" />
+            </div>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="font-family: Monospace;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">My Links</h5>
+                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" style="border: none; background: none; margin-right: 20px;"><ion-icon id="close-button" name="close-outline"></ion-icon></button>
+                </div>
+                <div class="offcanvas-body">
+                    <nav class="social-media">  <!-- social media side bar -->
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/tszwong/" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
+                            <li><a href="https://github.com/tszwong" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><i class="fab fa-github"></i><span>Github</span></a></li>
+                            <li><a href="https://www.instagram.com/jacky_wong10/" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+                            <li><a href="mailto:wongt@bu.edu"><i class="fab fa-google"></i><span>Email</span></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
 

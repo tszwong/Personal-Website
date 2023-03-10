@@ -47,8 +47,8 @@ h1, h2, h3 {
 
 .topnav a:hover {
     border-radius: 0;
-    background-color: black;
-    color: white;
+    background-color: #343333;
+    color: #af8900;
     transition: 0.65s;
 }
 
@@ -59,8 +59,8 @@ h1, h2, h3 {
     padding-bottom: 3px;
     margin-top: 40px;
     margin-left: 20px;
-    background-color: black;
-    color: white;
+    background-color: #343333;
+    color: #e8e8e8;
     letter-spacing: 2px;
 }
 
@@ -77,8 +77,8 @@ h1, h2, h3 {
 }
 
 #close-button:hover {
-    background-color: black;
-    color: rgb(197, 33, 33);
+    background-color: #343333;
+    color: #e8e8e8;
     transition: 0.35s;
     border: 1px;
     border-radius: 1px;
@@ -149,7 +149,7 @@ ul li a span{
 .social-media a:hover {
     z-index: 1;
     width: 100%;
-    color: white;
+    color: #e8e8e8;
     text-decoration: none;
 }
   
@@ -163,7 +163,7 @@ ul li:hover a span{
 li:hover {
     z-index: 1;
     padding-left: 10%;
-    background-color: black;
+    background-color: #343333;
     width: 100%;
 }
   
@@ -176,7 +176,7 @@ nav li{
  }
   
 nav li a{
-    color: black;
+    color: #e8e8e8;
     display: block;
     height: 100%;
     width: 100%;
@@ -351,4 +351,15 @@ body.dark-mode,
 }
 .dark-mode .project-links {
     color: #e8e8e8;
+}
+.dark-mode #offcanvasScrollingLabel {
+    color: #e8e8e8;
+    background-color: #343333;
+}
+.dark-mode #close-button:hover {
+    background-color: #343333;
+    color: #e8e8e8;
+}
+.dark-mode nav li a{
+    color: #343333;
 }
