@@ -31,6 +31,7 @@ h1, h2, h3 {
 }
 
 .topnav a {
+    flex-flow: column wrap;
     letter-spacing: 1px;
     color: #343333;
     margin-left: 10px;
@@ -193,6 +194,8 @@ nav ul {
 }
 
 #pdf-display {
+    height: auto;
+    width: auto;
     margin-top: 50px;
     margin-bottom: 100px;
 }
@@ -361,5 +364,5 @@ body.dark-mode,
     color: #e8e8e8;
 }
 .dark-mode nav li a{
-    color: #343333;
+    color: #2b2b2b;
 }
