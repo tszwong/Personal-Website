@@ -11,7 +11,7 @@
             Tsz Kit Wong
         </title>
 
-        <!-- bootstrap + other stylesheets + js script -->
+        <!-- bootstrap + other stylesheets/custom fonts + js script -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
@@ -66,6 +66,7 @@
                 <button id="theme-mode" onclick="myFunction()">Toggle dark/light mode</button>
             </div>
 
+
             <!-- cards to display personal projects -->
             <div class="cards-display">
                 <div class="container mt-5 mb-3">
@@ -75,6 +76,7 @@
                             Projects I have created so far...
                         </p>
 
+                        <!-- card 1 -->
                         <div class="col-md-4">
                             <div class="card p-3 mb-2" >
                                 <div class="d-flex justify-content-between">
@@ -97,6 +99,7 @@
                             </div>
                         </div>
 
+                        <!-- card 2 -->
                         <div class="col-md-4">
                             <div class="card p-3 mb-2">
                                 <div class="d-flex justify-content-between">
@@ -119,7 +122,8 @@
                             </div>
                         </div>
 
-                        <div id="third-card" class="col-md-4">
+                        <!-- card 3 -->
+                        <div class="col-md-4">
                             <div class="card p-3 mb-2">
                                 <div class="d-flex justify-content-between">
                                     <div class="d-flex flex-row align-items-center">
@@ -147,11 +151,15 @@
                 </div>
             </div>
 
+
+            <!-- displaying resume as jpeg, button allows to view or download pdf version -->
             <div id="resume-display" class="d-flex flex-column justify-content-center align-items-center">
                 <a id="resume-download" class="top-element" href="assets/Tsz Kit Wong Resume.pdf" download="assets/Tsz-Kit-Wong_Resume.pdf" target="_blank">View/Download Resume</a>
                 <img class="bottom-element" src="assets/Tsz-Kit-Wong_Resume.jpg" style="height: 80%; width: 80%; padding-bottom: 30px;">
             </div>
 
+
+            <!-- links popup -->
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="font-family: Monospace;">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasScrollingLabel">My Links</h5>
