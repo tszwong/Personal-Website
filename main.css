@@ -28,7 +28,7 @@ h1, h2, h3 {
     font-size: 18px;
     top: 0px;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 20px;
     position: sticky;
     background-color: #e8e8e8;
@@ -61,8 +61,7 @@ h1, h2, h3 {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07), 0 4px 20px 0 rgba(0, 0, 0, 0.07);
 }
 
-.topnav a:hover,
-#resume-download:hover {
+.topnav a:hover{
     border-radius: 0;
     background-color: #343333;
     color: #af8900;
@@ -71,6 +70,10 @@ h1, h2, h3 {
 
 #resume-download {
     margin-top: 10%;
+}
+
+#resume-download:hover {
+    color: rgb(188, 25, 25);
 }
 
 #offcanvasScrollingLabel {
@@ -136,7 +139,7 @@ h1, h2, h3 {
 }
 
 #currently {
-    margin-top: 150px;
+    margin-top: 25%;
 }
 
 #theme-mode {
@@ -150,7 +153,7 @@ h1, h2, h3 {
 }
 
 .footer {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     padding-top: 20px;
@@ -239,7 +242,7 @@ nav ul {
     height: 100%;
     border: none;
     border-radius: 10px;
-    background-color: rgb(243, 228, 210);
+    background-color: rgb(243, 228, 210, 0.5);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -247,6 +250,7 @@ nav ul {
     transform: translateY(-20px);
     transition: 0.6s ease-out;
     margin-bottom: 20px;
+    background-color: rgb(243, 228, 210);
 }
 
 .card p-3 mb-2 {
@@ -259,6 +263,7 @@ nav ul {
 
 .card h3 {
     font-size: 20px;
+    font-weight: bolder;
 }
 
 .c-details span {
@@ -334,7 +339,7 @@ a {
 }
 
 .py {
-    color: #3883eb !important;
+    color: #3376d4 !important;
 }
 
 .project-links {
@@ -370,9 +375,12 @@ body.dark-mode,
     color: rgb(247, 171, 48);
 }
 .dark-mode .card {
-    background-color: rgb(36, 35, 34);
+    background-color: rgb(36, 35, 34, 0.75);
     color: #e8e8e8;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dark-mode .card:hover {
+    background-color: rgb(135, 135, 135);
 }
 .dark-mode .card h3 {
     color: #e8e8e8;
