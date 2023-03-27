@@ -1,12 +1,3 @@
-@font-face {
-    font-family: "medio";
-    src: url("fonts/medio.otf");
-    font-family: "vogue";
-    src: url("fonts/Vogue.ttf");
-    font-family: "cocogoose heavy";
-    src: url("")
-}
-
 * {
     font-family: "Inter", serif;
 }
@@ -32,15 +23,6 @@ h1, h2, h3 {
     padding-bottom: 20px;
     position: sticky;
     background-color: #e8e8e8;
-}
-
-@media screen and (max-width: 600px) {
-    .topnav {
-        flex-direction: row;
-    }
-    .topnav a {
-        font-size: 18px;
-    }
 }
 
 .topnav a,
@@ -83,7 +65,7 @@ h1, h2, h3 {
     padding-bottom: 3px;
     margin-top: 40px;
     margin-left: 20px;
-    background-color: #343333;
+    background-color: #4d4b4b;
     color: #e8e8e8;
     letter-spacing: 2px;
 }
@@ -121,6 +103,7 @@ h1, h2, h3 {
 
 #name {
     font-weight: bold;
+    letter-spacing: 3px;
 }
 
 .about-me {
@@ -230,6 +213,11 @@ nav ul {
     margin-bottom: 200px;
 }
 
+.bottom-element {
+    height: 80%; 
+    width: 80%;
+}
+
 #active {
     border-radius: 0;
     background-color: #343333;
@@ -239,7 +227,7 @@ nav ul {
 .card {
     font-family: "Playfair-Display", serif;
     margin-top: 10%;
-    height: 100%;
+    height: 90%;
     border: none;
     border-radius: 10px;
     background-color: rgb(243, 228, 210, 0.5);
@@ -263,7 +251,6 @@ nav ul {
 
 .card h3 {
     font-size: 20px;
-    font-weight: bolder;
 }
 
 .c-details span {
@@ -346,6 +333,36 @@ a {
     text-decoration: none;
 }
 
+#scrollToTopBtn {
+    position: fixed;   
+    bottom: 80px;
+    right: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: row;
+    }
+    .topnav a {
+        font-size: 18px;
+    }
+    .bottom-element {
+        height: 80%; 
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .bottom-element {
+        height: 50%; 
+        width: 50%;
+    }
+}
+@media screen and (min-width: 2600px) {
+    .bottom-element {
+        height: 35%; 
+        width: 35%;
+    }
+}
 
 /* dark mode color theme */
 body.dark-mode,
