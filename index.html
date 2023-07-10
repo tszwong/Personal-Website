@@ -30,7 +30,8 @@
         <div class="main">
 
             <div class="topnav">
-                <a id="active" href="#">ABOUT ME</a>
+                <!-- <a id="active" href="#">TKW</a> -->
+                <a href="#">TKW</a>
                 <a href="#projects-section">PROJECTS</a>
                 <a data-bs-toggle="offcanvas" href="#offcanvasScrolling" role="button" aria-controls="offcanvasScrolling">LINKS</a>
                 <a href="#resume-display">RESUME</a>
@@ -58,21 +59,22 @@
 
             <div class="about-me">
                 <h1 id="name">Tsz Kit Wong</h1>
-                <p id="description" style="max-width: 35ch;">
-                    Sophomore student studying Computer Science at Boston University.
+                <hr id="name-hr">
+                <p id="description">
+                    Junior Computer Science Student @<span><a href="#" id="bu-name">Boston University.</a></span>
                 </p>
                 <!-- <img class="BULogo" src="assets/BULogo.png"> -->
-                <h3 id="currently">Currently Working On...</h3>
             </div>
+            <!-- <h3 id="currently">Currently Working On...</h3> -->
 
 
             <!-- cards to display personal projects -->
             <div class="cards-display" id="projects-section">
+
                 <div class="container mt-5 mb-3">
                     <div class="row">
-
-                        <p id="description">
-                            Projects I have created so far...
+                        <p id="project-description">
+                            things I have created so far...
                         </p>
 
                         <!-- card 1 -->
@@ -153,8 +155,31 @@
 
             <!-- displaying resume as jpeg, button allows to view or download pdf version -->
             <div id="resume-display" class="d-flex flex-column justify-content-center align-items-center">
-                <a id="resume-download" class="top-element" href="assets/Tsz Kit Wong Resume.pdf" download="assets/Tsz-Kit-Wong_Resume.pdf" target="_blank">View/Download Resume</a>
-                <img class="bottom-element" src="assets/Tsz-Kit-Wong_Resume.jpg" style="padding-bottom: 30px;">
+                <!-- Button to trigger the modal -->
+                <button type="button" class="btn btn-primary" id="resume-display" data-bs-toggle="modal" data-bs-target="#scrollableModal" style="height: 50%; width: 50%; background-color: wheat; border: none;">
+                    <h2 style="color: black;">EXPAND</h2>
+                    <img class="modal-image" src="assets/Tsz-Kit-Wong_Resume.jpg" alt="Image description" style="height: 50%; width: 50%;">
+                </button>
+
+                <!-- Scrollable Modal -->
+                <div class="modal fade" id="scrollableModal" tabindex="-1" aria-labelledby="scrollableModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="scrollableModalLabel">Scrollable Modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <!-- Image -->
+                        <img class="modal-image" src="assets/Tsz-Kit-Wong_Resume.jpg" alt="Image description">
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -176,6 +201,7 @@
                 </div>
             </div>
 
+            <!-- color mode button and back to top button -->
             <button id="theme-mode" onclick="myFunction()"><img id="moon" height="20px" width="20px"; src="assets/moon.svg"></button>
             <a href="#"><button id="scrollToTopBtn"><img id="up-arrow" height="20px" width="20px"; src="assets/up-arrow-svgrepo-com.svg"></button></a>
 

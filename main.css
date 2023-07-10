@@ -4,6 +4,8 @@
 
 body {
     background-color: #e8e8e8;
+    overflow: hidden;
+    overscroll-behavior: none;
 }
 
 h1, h2, h3 {
@@ -21,8 +23,13 @@ h1, h2, h3 {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 30px;
     position: sticky;
     background-color: #e8e8e8;
+}
+
+.topnav a {
+    margin-top: 30px;
 }
 
 .topnav a,
@@ -31,8 +38,8 @@ h1, h2, h3 {
     font-family: "Outfit", serif;
     letter-spacing: 1px;
     color: #343333;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 12px;
+    margin-right: 12px;
     padding-top: 8px;
     padding-bottom: 6px;
     padding-left: 16px;
@@ -51,12 +58,17 @@ h1, h2, h3 {
 }
 
 #resume-download {
-    margin-top: 10%;
+    margin-top: 200px;
 }
 
 #resume-download:hover {
-    color: rgb(188, 25, 25);
+    color: #942727;
 }
+
+.modal-image {
+    max-width: 100%;
+    height: auto;
+}  
 
 #offcanvasScrollingLabel {
     padding-top: 7px;
@@ -104,11 +116,23 @@ h1, h2, h3 {
 #name {
     font-weight: bold;
     letter-spacing: 3px;
+    font-size: 55px;
+}
+
+#name-hr {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #111;
+    opacity: 100;
+    width: 20%;
 }
 
 .about-me {
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 400px;
+    margin-bottom: 1800px;
     color: #111;
     text-align: center;
 }
@@ -119,10 +143,37 @@ h1, h2, h3 {
     max-width: 50ch;
     line-height: 175%;
     letter-spacing: 1px;
+    font-size: 20px;
+}
+
+#bu-name {
+    text-decoration: none;
+    font-weight: bolder; 
+    color: #942727;
+    margin-left: 2px;
+    padding-left: 6px;
+    padding-right: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+#bu-name:hover {
+    color: #fffbec;
+    background-color: #942727;
+    transition: 0.5s;
+    cursor: auto;
 }
 
 #currently {
     margin-top: 25%;
+    text-align: center;
+}
+
+#project-description {
+    padding-top: 10px;
+    margin-top: 30%;
+    text-align: center;
+    font-size: 30px;
 }
 
 #theme-mode {
@@ -136,6 +187,8 @@ h1, h2, h3 {
     border: none;
     border-radius: 4px;
     background-color: #b4b4b4;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #description {
@@ -217,8 +270,8 @@ nav ul {
 }
 
 #resume-display {
-    margin-top: 50px;
-    margin-bottom: 200px;
+    margin-top: 300px;
+    margin-bottom: 400px;
 }
 
 .bottom-element {
@@ -232,13 +285,17 @@ nav ul {
     color: #e8e8e8;
 }
 
+.cards-display {
+    margin-bottom: 1800px;
+}
+
 .card {
     font-family: "Playfair-Display", serif;
     margin-top: 10%;
     height: 90%;
     border: none;
     border-radius: 10px;
-    background-color: rgb(243, 228, 210, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -246,7 +303,7 @@ nav ul {
     transform: translateY(-20px);
     transition: 0.6s ease-out;
     margin-bottom: 20px;
-    background-color: rgb(243, 228, 210);
+    background-color: rgb(207, 207, 207);
 }
 
 .card p-3 mb-2 {
