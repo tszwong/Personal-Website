@@ -126,8 +126,16 @@ h1, h2, h3 {
 }
 
 #theme-mode {
+    position: fixed;
+    bottom: 130px;
+    right: 22px;
     text-transform: uppercase;
     font-size: 14px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #b4b4b4;
 }
 
 #description {
@@ -336,7 +344,12 @@ a {
 #scrollToTopBtn {
     position: fixed;   
     bottom: 80px;
-    right: 25px;
+    right: 22px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #b4b4b4;
 }
 
 @media screen and (max-width: 600px) {
@@ -418,4 +431,10 @@ body.dark-mode,
 }
 .dark-mode nav li a{
     color: #2b2b2b;
+}
+.dark-mode #scrollToTopBtn{
+    background-color: #e8e8e8;
+}
+.dark-mode #theme-mode{
+    background-color: #e8e8e8;
 }
