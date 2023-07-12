@@ -12,16 +12,25 @@ body {
     /* overscroll-behavior: none; */
 }
 
-h1, h2, h3 {
-    font-family: "Outfit", serif;
-    /* text-transform: uppercase; */
-    color: #343333;
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.main {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100vh;
 }
 
 .topnav {
     display: flex;
     justify-content: center;
-    z-index: 3;
+    z-index: 999;
     font-size: 18px;
     top: 0px;
     text-align: center;
@@ -30,6 +39,10 @@ h1, h2, h3 {
     margin-bottom: 30px;
     position: sticky;
     background-color: #e8e8e8;
+}
+
+.topnav a {
+    margin-top: 30px;
 }
 
 .topnav a,
@@ -57,31 +70,21 @@ h1, h2, h3 {
     transition: 0.65s;
 }
 
-#resume-download {
-    margin-top: 200px;
-}
-
-#resume-download:hover {
-    color: #942727;
-}
-
 .modal-image {
     max-width: 100%;
     height: auto;
-}  
+} 
 
 #offcanvasScrollingLabel {
-    padding-top: 4px;
+    padding-top: 7px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     margin-top: 40px;
     margin-left: 20px;
-    margin-bottom: 5px;
     background-color: #4d4b4b;
     color: #e8e8e8;
     letter-spacing: 2px;
-    font-size: 20px;
 }
 
 .offcanvas-header {
@@ -96,120 +99,6 @@ h1, h2, h3 {
     padding: 5px;
 }
 
-#close-button:hover {
-    background-color: #343333;
-    color: #e8e8e8;
-    transition: 0.35s;
-    border: 1px;
-    border-radius: 1px;
-}
-
-#name {
-    font-weight: bold;
-    letter-spacing: 3px;
-    font-size: 55px;
-    text-transform: uppercase;
-}
-
-#name-hr {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid #111;
-    opacity: 100;
-    width: 20%;
-}
-
-.about-me {
-    margin-top: 300px;
-    margin-bottom: 730px;
-    color: #111;
-    text-align: center;
-}
-
-.about-me p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50ch;
-    line-height: 175%;
-    letter-spacing: 1px;
-    font-size: 20px;
-}
-
-#bu-name {
-    text-decoration: none;
-    font-weight: bolder; 
-    color: #a82c2c;
-    margin-left: 2px;
-    padding-left: 6px;
-    padding-right: 4px;
-    position: relative;
-    overflow: hidden;
-}
-
-#bu-name:hover {
-    color: #fffbec;
-    background-color: #942727;
-    transition: 0.5s;
-    cursor: auto;
-}
-
-/* #currently {
-    margin-top: 25%;
-    text-align: center;
-} */
-
-.image-container {
-    height: 100vh;
-    background-image: url(assets/ski-1.jpg);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-#ski-text-header {
-    font-weight: 900;
-}
-
-#ski-text-description {
-    margin-top: 40px;
-    font-size: 45px;
-}
-
-.ski-pic-main-text {
-    line-height: 1.2;
-    max-width: 18ch;
-    margin-top: 5%;
-    margin-left: 30%;
-    font-size: 55px;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-}
-
-#pic-hr {
-    margin-top: 30px;
-    margin-bottom: 15px;
-    margin-left: 25%;
-    border: 4px solid rgb(255, 255, 255);
-    opacity: 100;
-    width: 21%;
-}
-
-#ski-pic-sub-text {
-    padding-top: 15px;
-    margin-left: 30%;
-    font-size: 25px;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-}
-
-#description {
-    padding-top: 10px;
-    text-align: center;
-}
-  
 nav li a i{
     position: absolute;
     top: 17px;
@@ -270,11 +159,58 @@ nav ul {
     margin-left: 30px;
 }
 
-#resume-display {
-    margin-top: 100px;
-    margin-bottom: 200px;
-    padding-top: 20px;
-    padding-bottom: 50px;
+#close-button:hover {
+    background-color: #343333;
+    color: #e8e8e8;
+    transition: 0.35s;
+    border: 1px;
+    border-radius: 1px;
+}
+
+#name {
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+#name-hr {
+    margin-top: 15px;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #111;
+    opacity: 100;
+    width: 20%;
+}
+
+.about-me {
+    color: #111;
+    text-align: center;
+}
+
+#bu-name {
+    text-decoration: none;
+    font-weight: bolder; 
+    color: #a82c2c;
+    margin-left: 2px;
+    padding-left: 6px;
+    padding-right: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+#bu-name:hover {
+    color: #fffbec;
+    background-color: #942727;
+    transition: 0.5s;
+    cursor: auto;
+}
+
+#description {
+    padding-top: 10px;
+    text-align: center;
+    margin-left: 28px;
 }
 
 .bottom-element {
@@ -282,30 +218,21 @@ nav ul {
     width: 80%;
 }
 
-/* #active {
+#active {
     border-radius: 0;
     background-color: #343333;
     color: #e8e8e8;
-} */
+}
 
 #project-description {
     padding-top: 10px;
-    margin-top: 20%;
-    margin-bottom: 35px;
+    margin-top: 30%;
     text-align: center;
-    font-size: 45px;
-    font-family: "Playfair-Display";
-    color: #e8e8e8;
-}
-
-.cards-display {
-    padding-top: 30px;
-    padding-bottom: 350px;
-    background-color: #959595;
+    font-size: 30px;
 }
 
 .card {
-    margin-top: 10%;
+    font-family: "Playfair-Display", serif;
     height: 90%;
     border: none;
     border-radius: 10px;
@@ -326,6 +253,10 @@ nav ul {
 
 .col-md-4 {
     margin-bottom: 7%;
+}
+
+.mt-3 {
+    margin-top: 0px !important;
 }
 
 .card h3 {
@@ -353,7 +284,6 @@ nav ul {
     width: 65px;
     height: 30px;
     padding-bottom: 3px;
-    padding-left: 0px;
     border-radius: 5px;
     display: flex;
     color: rgb(247, 171, 48);
@@ -362,7 +292,7 @@ nav ul {
 }
 
 .ms-2 {
-    margin-left: 0 !important;
+    margin-left: 0;
 }
 
 .progress {
@@ -381,6 +311,10 @@ nav ul {
 
 .text2 {
     color: #a5aec0;
+}
+
+a {
+    color: #111;
 }
 
 .gh-icon:hover {
@@ -411,12 +345,6 @@ nav ul {
 
 .project-links {
     text-decoration: none;
-    font-weight: 900;
-    color: #111;
-}
-
-.project-links:hover {
-    color: #942727;
 }
 
 #theme-mode {
@@ -469,39 +397,8 @@ nav ul {
         margin-left: 7px;
         margin-right: 7px;
     }
-    .about-me {
-        margin-top: 270px;
-        margin-bottom: 630px;
-    }
     .about-me p {
         max-width: 30ch;
-    }
-    #name-hr {
-        width: 30%;
-    }
-    #ski-text-header {
-        margin-top: 100px;
-    }
-    #ski-text-description {
-        font-size: 45px;
-        padding-top: 20px;
-    }
-    .ski-pic-main-text {
-        padding-left: 35px;
-        font-size: 55px;
-        font-weight: 900;
-        color: rgb(255, 255, 255);
-    }
-    #pic-hr {
-        margin-top: 30px;
-        margin-bottom: 15px;
-        margin-left: 65px !important;
-        width: 30%;
-    }
-    #ski-pic-sub-text {
-        padding-top: 15px;
-        padding-left: 35px;
-        font-size: 18px !important;
     }
     .bottom-element {
         height: 80%; 
@@ -513,16 +410,17 @@ nav ul {
         width: 85%;
     }
     #project-description {
-        margin-bottom: 50px;
-        margin-top: 100px;
-        font-size: 35px;
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+    .mt-3 {
+        margin-top: 0px !important;
     }
     .mt-4 {
         height: 110px;
     }
     .mt-5 {
         margin-top: 25px !important;
-        padding-bottom: 100px;
     }
     .row {
         flex-direction: row;
@@ -535,9 +433,6 @@ nav ul {
     }
     .card {
         margin-top: 5%;
-    }
-    .cards-display {
-        padding-bottom: 200px;
     }
     .card:hover {
         transform: translateY(-10px);
@@ -553,6 +448,7 @@ nav ul {
         padding-left: 1px;
         padding-right: 1px;
     }
+    
     #scrollToTopBtn {
         position: fixed;   
         bottom: 100px;
@@ -562,30 +458,6 @@ nav ul {
         padding-bottom: 3px;
         padding-left: 1px;
         padding-right: 1px;
-    }
-}
-@media screen and (max-width: 1200px) {
-    .ski-pic-main-text {
-        margin-top: 7%;
-        margin-left: 10%;
-        font-size: 55px;
-        font-weight: 900;
-        color: rgb(255, 255, 255);
-    }
-    #pic-hr {
-        margin-top: 30px;
-        margin-bottom: 15px;
-        margin-left: 10%;
-        width: 30%;
-    }
-    #ski-pic-sub-text {
-        padding-top: 10px;
-        margin-left: 10%;
-        font-size: 20px;
-    }
-    .bottom-element {
-        height: 50%; 
-        width: 50%;
     }
 }
 @media screen and (min-width: 1600px) {
@@ -624,15 +496,6 @@ body.dark-mode,
     background-color: rgb(212, 212, 212);
     color: #111;
 }
-.dark-mode #ski-pic-main-text {
-    color: #5d5d5d;
-}
-.dark-mode #pic-hr {
-    border: 4px solid #5d5d5d;
-}
-.dark-mode #ski-pic-sub-text {
-    color: #5d5d5d;
-}
 .dark-mode .badge span {
     background-color: #484745;
     color: rgb(247, 171, 48);
@@ -642,9 +505,6 @@ body.dark-mode,
     color: #e8e8e8;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.dark-mode .cards-display {
-    background-color: #5d5d5d;
-}
 .dark-mode .card:hover {
     background-color: rgb(135, 135, 135);
 }
@@ -653,9 +513,6 @@ body.dark-mode,
 }
 .dark-mode .css {
     color: #e1c742 !important;
-}
-.dark-mode #project-description {
-    color: #e8e8e8;
 }
 .dark-mode .project-links {
     color: #e8e8e8;

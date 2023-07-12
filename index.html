@@ -19,6 +19,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair-Display">
         <link rel="stylesheet" href="main.css">
         <script src="script.js"></script>
+
+        <!-- favicon -->
+        <link rel="icon" href="assets/favicon.ico">
         
         <!-- ionicons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -28,18 +31,20 @@
     
     <body>
         <div class="main">
-
+            
+            <!-- navigation bar -->
             <div class="topnav">
                 <!-- <a id="active" href="#">TKW</a> -->
-                <a href="#">TKW</a>
+                <a href="#">ABOUT ME</a>
                 <a href="#projects-section">PROJECTS</a>
                 <a data-bs-toggle="offcanvas" href="#offcanvasScrolling" role="button" aria-controls="offcanvasScrolling">LINKS</a>
                 <a href="#resume-display">RESUME</a>
             </div>
 
+            <!-- the side pop up for the links page -->
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="font-family: Monospace; background-color: #909090;">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">My Links</h5>
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Let's Connect!</h5>
                     <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" style="border: none; background: none; margin-right: 20px;"><ion-icon id="close-button" name="close-outline"></ion-icon></button>
                 </div>
                 <div class="offcanvas-body">
@@ -56,26 +61,23 @@
             
 
             </br>
-
+            <!-- brief about me section, what the user will see when the page first loads -->
             <div class="about-me">
                 <h1 id="name">Tsz Kit Wong</h1>
                 <hr id="name-hr">
                 <p id="description">
-                    Junior Computer Science Student @<span><a href="#" id="bu-name">Boston University.</a></span>
+                   Junior Computer Science Student @<span><a href="#" id="bu-name">Boston University.</a></span>
                 </p>
-                <!-- <img class="BULogo" src="assets/BULogo.png"> -->
             </div>
             <!-- <h3 id="currently">Currently Working On...</h3> -->
-
 
             <!-- cards to display personal projects -->
             <div class="cards-display" id="projects-section">
 
                 <div class="container mt-5 mb-3">
+                        
                     <div class="row">
-                        <p id="project-description">
-                            things I have created so far...
-                        </p>
+                        <p id="project-description">things I have created so far...</p>
 
                         <!-- card 1 -->
                         <div class="col-md-4">
@@ -152,64 +154,54 @@
                 </div>
             </div>
 
+            <!-- picture 1 skiing -->
+            <div class="image-container">
+                <p class="ski-pic-main-text" id="ski-text-header"><em>Outside of school...</em></p>
+                <p class="ski-pic-main-text" id="ski-text-description">I am an avid skiier and love exploring new places !</p>
+                <hr id="pic-hr">
+                <p id="ski-pic-sub-text">A photo taken during my 2020 Vermont ski trip.</p>
+            </div>
 
-            <!-- displaying resume as jpeg, button allows to view or download pdf version -->
+            <!-- displays a button that can be clicked to open a scrollable modal that allows for the full page display of my resume -->
             <div id="resume-display" class="d-flex flex-column justify-content-center align-items-center">
                 <!-- Button to trigger the modal -->
-                <button type="button" class="btn btn-primary" id="resume-display" data-bs-toggle="modal" data-bs-target="#scrollableModal" style="height: 50%; width: 50%; background-color: wheat; border: none;">
-                    <h2 style="color: black;">EXPAND</h2>
-                    <img class="modal-image" src="assets/Tsz-Kit-Wong_Resume.jpg" alt="Image description" style="height: 50%; width: 50%;">
+                <button type="button" class="btn btn-primary" id="resume-display" data-bs-toggle="modal" data-bs-target="#scrollableModal" style="height: 50%; width: 50%; background-color: rgb(250, 233, 202); border: none;">
+                    <h2 style="color: black; text-transform: uppercase;">Expand</h2>
+                    <img class="modal-image" src="assets/Tsz-Kit-Wong-Resume.jpg" alt="Image description" style="height: 50%; width: 50%;">
                 </button>
 
                 <!-- Scrollable Modal -->
                 <div class="modal fade" id="scrollableModal" tabindex="-1" aria-labelledby="scrollableModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="scrollableModalLabel">Scrollable Modal</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="scrollableModalLabel">Tsz-Kit-Wong-Resume</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            <!-- Image -->
+                                <img class="modal-image" src="assets/Tsz-Kit-Wong-Resume.jpg" alt="Image description">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="color: #e8e8e8; background-color: #942727;">Close</button>
+                                <button type="button" class="btn btn-primary" style="background-color: #117f12;">Download</button>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                        <!-- Image -->
-                        <img class="modal-image" src="assets/Tsz-Kit-Wong_Resume.jpg" alt="Image description">
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>
-
-
-            <!-- links popup -->
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" style="font-family: Monospace;">
-                <div class="offcanvas-header"
-                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">My Links</h5>
-                    <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" style="border: none; background: none; margin-right: 20px;"><ion-icon id="close-button" name="close-outline"></ion-icon></button>
-                </div>
-                <div class="offcanvas-body">
-                    <nav class="social-media">  <!-- social media side bar -->
-                        <ul>
-                            <li><a href="https://www.linkedin.com/in/tszwong/" target="_blank" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
-                            <li><a href="https://github.com/tszwong" target="_blank" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><i class="fab fa-github"></i><span>Github</span></a></li>
-                            <li><a href="https://www.instagram.com/jacky_wong10/" target="_blank" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
-                            <li><a href="mailto:wongt@bu.edu"><i class="fab fa-google"></i><span>Email</span></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
+            
             <!-- color mode button and back to top button -->
             <button id="theme-mode" onclick="myFunction()"><img id="moon" height="20px" width="20px"; src="assets/moon.svg"></button>
             <a href="#"><button id="scrollToTopBtn"><img id="up-arrow" height="20px" width="20px"; src="assets/up-arrow-svgrepo-com.svg"></button></a>
 
+            <!-- basic footer with my initials and current year -->
             <div class="footer">
-                <p>TKW 2022</p>
+                <p>TKW 2023</p>
             </div>
 
         </div>
+        
     </body>
 
 </html>
