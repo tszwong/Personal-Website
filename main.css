@@ -643,21 +643,21 @@ body.dark-mode,
     background-color: rgb(212, 212, 212);
     color: #111;
 }
-.dark-mode #ski-pic-main-text {
-    color: #1d1d1d;
+.dark-mode .ski-pic-main-text {
+    color: #FFFFFF;
 }
-.dark-mode #ski-text-header {
-    color: #1d1d1d;
+/* .dark-mode #ski-text-header {
+    color: #e8e8e8;
 }
 .dark-mode #pic-hr {
-    border: 4px solid #1d1d1d;
-}
-.dark-mode .image-container {
+    border: 4px solid #e8e8e8;
+} */
+/* .dark-mode .image-container {
     opacity: 0.8;
-}
-.dark-mode #ski-pic-sub-text {
-    color: #1d1d1d;
-}
+} */
+/* .dark-mode #ski-pic-sub-text {
+    color: #e8e8e8;
+} */
 .dark-mode .badge span {
     background-color: #484745;
     color: rgb(247, 171, 48);
